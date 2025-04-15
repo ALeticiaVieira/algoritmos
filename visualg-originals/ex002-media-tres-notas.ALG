@@ -1,0 +1,29 @@
+
+// Exercício 02 - Média de Três notas
+// Objetivo: Calcular a média entre três notas e exibir o valor da média
+
+algoritmo "media"
+var
+    N1, N2, N3: inteiro
+    media: real
+inicio
+    Escreval("====================================")
+    Escreval("           MÉDIA DE NOTAS           ")
+    Escreval("====================================")
+
+    Escreva("Digite a primeira nota: ")
+    Leia(N1)
+
+    Escreva("Digite a segunda nota: ")
+    Leia(N2)
+
+    Escreva("Digite a terceira nota: ")
+    Leia(N3)
+
+    media <- (N1 + N2 + N3) / 3
+
+    Escreval("-------------------------------------")
+    Escreval("A média entre as notas ", N1, ", ", N2, " e ", N3, " é: ", media:4:2)
+    Escreval("=====================================")
+fimalgoritmo
+

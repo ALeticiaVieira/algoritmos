@@ -1,0 +1,24 @@
+
+// Exercício 04 - Conversor de Moedas
+// Objetivo: Fazer uma conversão de moedas, do dólar para real.
+
+algoritmo "conversormoeda"
+var
+     dolar, reais, converter: real
+inicio
+    Escreval("=====================================")
+    Escreval("          CONVERSOR DE MOEDAS        ")
+    Escreval("=====================================")
+
+    Escreva("Digite a cotação atual do dólar: ")
+    Leia(dolar)
+
+    Escreva("Digite quanto você tem em reais: R$ ")
+    Leia(reais)
+
+    converter <- reais / dolar
+
+    Escreval("--------------------------------------")
+    Escreval("Você possui aproximadamente US$ ", converter:4:2)
+    Escreval("======================================")
+fimalgoritmo

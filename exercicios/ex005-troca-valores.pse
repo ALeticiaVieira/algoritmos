@@ -1,0 +1,27 @@
+
+// Exercício 05 - Troca de valores
+// Objetivo: Ler duas variáveis e fazer a troca dos valores delas sem usar uma variável auxiliar. 
+
+algoritmo "trocavalores"
+var 
+    x, y: inteiro
+inicio
+    Escreval("===========================================")
+    Escreval("             TROCA DE VALORES              ")
+    Escreval("===========================================")
+
+    Escreva("Digite o valor da variável X: ")
+    Leia(x)
+
+    Escreva("Digite o valor da variável Y: ")
+    Leia(y)
+
+    x <- x + y
+    y <- x - y
+    x <- x - y
+
+    Escreval("-------------------------------------------")
+    Escreval("Agora o valor de X é: ", x)
+    Escreval("Agora o valor de Y é: ", y)
+    Escreval("===========================================")
+fimalgoritmo

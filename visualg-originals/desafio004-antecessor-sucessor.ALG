@@ -1,0 +1,30 @@
+
+// Desafio 04 - Antecessor e sucessor
+// Objetivo: Ler um número e exibir o seu antecessor e sucessor.
+
+algoritmo "antesuc"
+var
+    n1, antecessor, sucessor: inteiro
+inicio
+    Escreval("======================================")
+    Escreval("        ANTECESSOR E SUCESSOR         ")
+    Escreval("======================================")
+
+    Escreva("Digite um número: ")
+    Leia(n1)
+
+    antecessor <- n1 - 1
+    sucessor <- n1 + 1
+
+    Escreval("--------------------------------------")
+    Escreval("Número digitado: ", n1)
+
+    // Bônus: Resposta divertida se o número for negativo
+    Se n1 < 0 entao
+        Escreval("Número negativo??? Tá corajoso hoje hein! KK")
+    fimse
+
+    Escreval("Antecessor: ", antecessor)
+    Escreval("Sucessor: ", sucessor)
+    Escreval("======================================")
+fimalgoritmo
