@@ -1,0 +1,33 @@
+
+// Exercício 06 - Comparar Números
+// Objetivo: Ler dois números e verificar se são iguais, exibir o resultado e caso não forem, exibir também qual o maior e qual o menor.
+
+algoritmo "comparando_numeros"
+var
+   N1, N2: Inteiro
+inicio
+      Escreval("===================================")
+      Escreval("         COMPARAR NÚMEROS          ")
+      Escreval("===================================")
+      
+      Escreva("Digite um número: ")
+      Leia(N1)
+      
+      Escreva("Digite outro número: ")
+      Leia(N2)
+
+      Escreval("-----------------------------------")
+      Se (N1 = N2) entao
+            Escreval(N1, " é igual a ", N2)
+      Senao
+            Escreval(N1, " não é igual a ", N2)
+                  Se (N1 > N2) entao
+                        Escreval("Maior: ",N1)
+                        Escreval("Menor: ",N2)
+                  Senao
+                        Escreval("Maior: ",N2)
+                        Escreval("Menor: ",N1)
+                  Fimse
+      FimSe
+      Escreval("===================================")
+fimalgoritmo

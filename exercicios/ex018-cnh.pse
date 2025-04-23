@@ -1,0 +1,31 @@
+
+// Exercício - Pode tirar a CNH?
+// O programa vai perguntar a idade da pessoa e se ela sabe ler e escrever. Só será permitido tirar a CNH se ela tiver 18 anos ou mais e souber ler e escrever.
+
+algoritmo "cnh"
+var
+    idade: inteiro
+    ler: caractere
+inicio
+    Escreval("============================================")
+    Escreval("          PODE OU NÃO TIRAR A CNH           ")
+    Escreval("============================================")
+
+    Escreva("Digite sua idade: ")
+    Leia(idade)
+    Escreval("--------------------------------------------")
+    
+    Se (idade >= 18) entao
+        Escreva("Sabe ler? [S/N] ")
+        Leia(ler)
+        Escreval("--------------------------------------------")
+        Se (ler = "S") ou (ler = "s") entao
+            Escreval("Você pode tirar a CNH!")
+        Senao 
+            Escreval("Infelizmente você não pode tirar a CNH. É necessário saber ler e escrever.")
+        FimSe
+    Senao 
+        Escreval("Infelizmente você não pode tirar a CNH. Volte em ",18 - idade," ano(s).")
+    FimSe
+    Escreval("============================================")
+fimalgoritmo

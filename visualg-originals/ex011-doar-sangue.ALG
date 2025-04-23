@@ -1,0 +1,41 @@
+
+// Exercício 11 - Doação de Sangue
+// Objetivo: Verificar idade do usuário e informar se ele já tem idade permitida para fazer doação. Caso a idade permita, mas seja acima de 60 anos, só será permitido se ele já tiver feito doação. Também solicitar essa resposta e exibir se poderá ou não.
+
+algoritmo "doacao"
+var
+    idade: inteiro
+    doacao: caractere
+inicio
+
+    Escreval("==========================================")
+    Escreval("                DOAR SANGUE               ")
+    Escreval("==========================================")
+
+    Escreva("Digite sua idade: ")
+    Leia(idade)
+
+    Se (idade >= 16) e (idade <=60) entao
+        Escreval("Você pode doar!")
+        Escreval("==========================================")
+
+    Senao
+        Se (idade > 60) e (idade <=69) entao
+            Escreva("Você já doou antes? [S/N]")
+            Leia(doacao)
+            Escreval("-----------------------------------------")
+
+            Se (doacao = "S") ou (doacao = "s") entao
+                Escreval("Você pode doar!")
+                Escreval("==========================================")
+            Senao
+                Escreval("Você não pode doar!")
+                Escreval("==========================================")
+            FimSe
+
+        Senao
+            Escreval("Você não pode doar!")
+            Escreval("==========================================")
+        FimSe
+    FimSe
+fimalgoritmo

@@ -1,0 +1,26 @@
+
+// Exercício 13 - Par ou Ímpar
+// Objetivo: Solicitar um número ao usuário e verificar se esse número é par ou ímpar, utilizando o operador mod.
+
+algoritmo "par-impar"
+var
+    numero: inteiro
+inicio
+    Escreval("=====================================")
+    Escreval("             PAR OU ÍMPAR            ")
+    Escreval("=====================================")
+
+    Escreva("Digite um número: ")
+    Leia(numero)
+
+    Escreval("-------------------------------------")
+    Escreval("Verificando...")
+    Escreval("-------------------------------------")
+
+    Se numero mod 2 = 0 entao
+        Escreval("O número ",numero," é PAR!!!")
+    Senao 
+        Escreval("O número ",numero," é ÍMPAR!!!")
+    FimSe
+    Escreval("=====================================")
+fimalgoritmo

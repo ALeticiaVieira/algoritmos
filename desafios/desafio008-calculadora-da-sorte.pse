@@ -1,0 +1,48 @@
+
+// Desafio 08 - Calculadora da Sorte
+// Objetivo: Pedir dois números ao usuário e uma operação matemática (+, -, *, /), depois irá mostrar o resultado da operação escolhida. Caso o usuário digite algo inválido vai exibir uma mensagem de erro.
+
+algoritmo "Calculadora"
+var
+    n1, n2, resultado: real
+    op: caractere
+inicio
+    Escreval("=============================================")
+    Escreval("            CALCULADORA DA SORTE             ")
+    Escreval("=============================================")
+
+    Escreva("Primeiro número: ")
+    Leia(n1)
+    Escreva("Segundo número: ")
+    Leia(n2)
+    Escreva("Operação [+ - * /]: ")
+    Leia(op)
+    Escreval("---------------------------------------------")
+
+    Se (op <> "+") e (op <> "-") e (op <> "*") e (op <> "/") entao
+        Escreval("Ihh, buuuguei!!! Que operação é essa aí? ")
+    Senao
+        Se (op = "+") entao
+            resultado <- n1 + n2
+            Escreval(n1," + ",n2," = ",resultado)
+        Senao 
+            Se (op = "-") entao
+                resultado <- n1 - n2 
+                Escreval(n1, " - ",n2," = ",resultado)
+            Senao
+                Se (op= "*") entao
+                    resultado <- n1 * n2
+                    Escreval(n1," * ",n2," = ",resultado)
+                Senao
+                    Se n2 = 0 entao
+                        Escreval("Dividir por zero não rola, né?")
+                    Senao
+                        resultado <- n1 / n2 
+                        Escreval(n1," / ",n2," = ",resultado)
+                    FimSe
+                FimSe
+            FimSe
+        FimSe
+    FimSe   
+    Escreval("=============================================")
+fimalgoritmo

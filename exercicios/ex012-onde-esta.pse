@@ -1,0 +1,38 @@
+
+// Exercício 12 - O número está entre?
+// Objetivo: Pedir ao usuário pra digitar 3 números, um número principal, um mínimo e um máximo. O programa vai verificar se o principal está entre os outros. O programa contém um corretor, caso o usuário digite o valor do máximo no lugar do mínimo.
+
+algoritmo "verificando-numeros"
+var
+    pri, min, max, correcao: real
+inicio 
+    Escreval("====================================")
+    Escreval("       VERIFICANDO NÚMEROS          ")
+    Escreval("====================================")
+
+    Escreva("Digite o número principal: ")
+    Leia(pri)
+
+    Escreva("Digite o número mínimo: ")
+    Leia(min)
+
+    Escreva("Digite o número máximo: ")
+    Leia(max)
+
+    Se (min > max) entao
+        correcao <- min
+        min <- max
+        max <- correcao
+        Escreval("Ops! Você trocou os valores. Corrigindo... Agora o valor mínimo é ",min, " e o máximo é ", max, ".")
+    FimSe
+
+    Escreval("-------------------------------------")
+    Escreval("Verificando...")
+
+    Se (pri > min) e (pri < max) entao
+        Escreval("O número ",pri," está entre ",min," e ", max)
+    Senao
+        Escreval("O número ", pri," não está entre ",min," e ",max)
+    FimSe
+    Escreval("====================================")
+fimalgoritmo

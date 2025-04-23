@@ -1,0 +1,27 @@
+
+    // Desafio 009: Detector de Letras Maiúsculas
+    // Objetivo: Pedir ao usuário pra digitar uma letra e o programa vai identificar se ela é maiúscula ou minúscula, ou até mesmo se não é letra rsrs.
+
+    algoritmo "letras"
+    var
+        letra: caractere
+    inicio
+        Escreval("============================================")
+        Escreval("      LETRAS MAIÚSCULAS OU MINÚSCULAS       ")
+        Escreval("============================================")
+
+        Escreva("Digite uma letra qualquer: ")
+        Leia(letra)
+        Escreval("--------------------------------------------")
+
+    Se (letra >= "A") e (letra <= "Z") entao
+        Escreval("A letra ",letra," é MAIÚSCULA!")
+    Senao
+        Se (letra >= "a") e (letra <= "z") entao
+            Escreval("A letra ",letra," é MINÚSCULA!")
+        Senao
+            Escreval("Hmmm... Isso aí não é uma letra válida, hein!")
+        FimSe
+    FimSe
+    Escreval("============================================")
+    fimalgoritmo

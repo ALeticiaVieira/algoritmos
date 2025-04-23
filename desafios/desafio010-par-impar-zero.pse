@@ -1,0 +1,29 @@
+
+// Desafio 010 - Par, Ímpar ou Zero?
+// Objetivo: Pedir um número ao usuário e analisar se esse número é zero, ímpar ou par e mostrar o resultado.
+
+algoritmo "classificacao-numero"
+var
+    numero: inteiro
+inicio
+    Escreval("=========================================")
+    Escreval("           PAR, ÍMPAR OU ZERO?           ")
+    Escreval("=========================================")
+
+    Escreva("Digite um número: ")
+    Leia(numero)
+    Escreval("-----------------------------------------")
+    Escreval("Verificando...")
+    Escreval("-----------------------------------------")
+
+    Se (numero = 0) entao
+        Escreval(numero," é um número neutro! Nem quente e nem frio...")
+    Senao 
+        Se (numero mod 2 = 0) entao
+            Escreval(numero," é PAR!!!")
+        Senao 
+            Escreval(numero," é ÍMPAR!!!") 
+        FimSe
+    FimSe
+    Escreval("=========================================")
+fimalgoritmo
